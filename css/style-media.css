@@ -1,6 +1,7 @@
 :root {
     --white: #ffffff;
     --orange: #eb9500;
+    --orange-100: #f58225;
     --yellow: #ffc100;
     --cyan: #a6c4ea;
 
@@ -30,8 +31,7 @@
     }
 
     .title-question {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.6rem;
     }
 
     .question-idea {
@@ -39,13 +39,11 @@
     }
 
     .title-idea {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.6rem;
     }
 
     .title-social-group {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.2rem;
     }
 
     /* Content */
@@ -54,11 +52,11 @@
     }
 
     .description-recipe {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .description-recipe h2 {
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     /* Form */
@@ -111,6 +109,16 @@
 }
 
 @media (min-width: 768px) {
+
+    /* Header */
+    .question-revenues {
+        height: 42.1rem;
+    }
+
+    .question-idea {
+        height: 42.1rem;
+    }
+
     .banner-mobile {
         display: none;
     }
@@ -123,10 +131,18 @@
         display: block;
     }
 
+    .banner-desktop {
+        display: block;
+    }
+
     .form-group {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .content-last-sent-desktop {
+        display: none;
     }
 
     .list-tools {
@@ -143,16 +159,27 @@
 
     .list-menu {
         flex-direction: row;
-        margin-bottom: 1.2rem;
+        margin-bottom: 2.6rem;
     }
 
     .list-menu li {
         font-size: 1.6rem;
+        padding-left: 2rem;
+        margin-right: 2rem;
     }
 
-    .list-menu:first-child {
+    .list-menu li:nth-child(1) {
+        display: none;
+    }
+
+    .list-menu li:nth-child(2) {
         list-style: none;
     }
+
+    .list-menu li:nth-child(5) {
+        margin-right: 0;
+    }
+
 
     .list-menu li h4 {
         display: none;
@@ -167,7 +194,15 @@
         font-size: 1.6rem;
     }
 
+    .divider-1 {
+        display: block;
+    }
+
     .divider-2 {
+        display: none;
+    }
+
+    .divider-3 {
         display: none;
     }
 
@@ -202,5 +237,209 @@
 
     .selo {
         display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Header */
+    .content-header {
+        flex-direction: row;
+    }
+
+    .logo {
+        margin-left: auto;
+    }
+
+    .wrapper-list-social {
+        margin-left: 3rem;
+        margin-top: 0;
+    }
+
+    /* About Revenues */
+    .container-revenues {
+        background: url('../imgs/background.jpg') no-repeat;
+        background-color: var(--gray-100);
+        background-position: top center;
+        z-index: -1;
+    }
+
+    .container-revenues-mobile {
+        display: none;
+    }
+
+    .content-revenues-desktop {
+        display: block;
+    }
+
+    .title-revenues {
+        display: block;
+    }
+
+    .content-revenues {
+        display: flex;
+        align-items: center;
+    }
+
+    .question-revenues {
+        width: 33.33%;
+        height: 20.1rem;
+        z-index: 1;
+    }
+
+    .question-idea {
+        width: 33.33%;
+        height: 20.1rem;
+        z-index: 1;
+    }
+
+    .social-group {
+        width: 33.33%;
+        height: 20.1rem;
+        z-index: 1;
+    }
+
+    .content-social-group {
+        margin: 0;
+        margin-left: auto;
+    }
+
+    .phone {
+        margin-top: -1rem;
+        width: 40%;
+    }
+
+    /* content */
+    .wrapper-recipe {
+        display: none;
+    }
+
+    .wrapper-recipe-desktop {
+        display: flex;
+    }
+
+    .recipe-desktop {
+        width: 100%;
+    }
+
+    .wrapper-button {
+        display: none;
+    }
+
+    .banner-mobile {
+        display: none;
+    }
+
+    .list-tools {
+        display: none;
+    }
+
+    .list-tools-desktop {
+        width: 100%;
+        max-width: max-content;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 2rem;
+        inline-size: max-content;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+        margin-top: 4rem;
+        list-style: none;
+    }
+
+    .list-tools-desktop li a {
+        display: block;
+        color: var(--white);
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding-bottom: 1rem;
+        border-bottom: 3px solid var(--gray-400);
+    }
+
+    /* Form */
+    .container-form {
+        background: url('../imgs/indique-fundo-desk.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-top: 3px solid var(--orange);
+        height: 30.6rem;
+        z-index: -1;
+        padding-top: 2rem;
+    }
+
+    .input-form {
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .button-form {
+        width: 10%;
+        font-size: 1.4rem;
+        padding-block: 1rem;
+        background-color: var(--orange-100);
+    }
+
+    .container-projects-challenge {
+        border-top: 3px solid var(--orange);
+        border-bottom: 3px solid var(--orange);
+    }
+
+    .title-form {
+        width: 60%;
+        margin-top: 3.5rem;
+        margin-inline: auto;
+    }
+
+    .container-last-sent {
+        display: none;
+    }
+
+    .content-last-sent-desktop {
+        display: flex;
+        flex-direction: column;
+        gap: 5.7rem;
+        padding-block: 2.5rem;
+    }
+
+    .container-last-sent-desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .title-last-sent-desktop {
+        font-size: 2.5rem;
+        color: var(--orange);
+    }
+
+    .title-last-sent-desktop span {
+        border-bottom: 3px solid var(--yellow);
+        padding-bottom: 1rem;
+    }
+
+    .container-partners {
+        border-bottom: 3px solid var(--orange);
+    }
+
+    /* Footer */
+    .title-projects-challenge {
+        color: var(--orange);
+    }
+
+    .title-projects-challenge span {
+        border-bottom: 3px solid var(--orange);
+    }
+
+    .know-more {
+        color: var(--orange);
+    }
+
+    .title-tools {
+        color: var(--orange);
+    }
+
+    .title-footer {
+        color: var(--orange);
     }
 }
