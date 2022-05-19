@@ -360,6 +360,12 @@ body {
     color: var(--gray-400);
     font-weight: 400;
     font-size: 1.2rem;
+    outline: none;
+    transition: 0.2s;
+}
+
+.input-form:focus {
+    border: 1px solid var(--gray-400);
 }
 
 .button-form {

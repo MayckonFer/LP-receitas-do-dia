@@ -66,6 +66,7 @@
 
     .input-form {
         max-width: 15.3rem;
+        font-size: 1.4rem;
     }
 
     .button-form {
@@ -129,6 +130,11 @@
 
     .button-desktop-last-sent {
         display: block;
+        transition: 0.2s;
+    }
+
+    .button-desktop-last-sent:hover {
+        filter: brightness(1.1);
     }
 
     .banner-desktop {
@@ -355,6 +361,11 @@
         font-weight: 700;
         padding-bottom: 1rem;
         border-bottom: 3px solid var(--gray-400);
+        transition: 0.2s;
+    }
+
+    .list-tools-desktop li a:hover {
+        color: var(--gray-400);
     }
 
     /* Form */
@@ -370,7 +381,7 @@
 
     .input-form {
         padding: 1rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .button-form {
